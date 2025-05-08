@@ -3,12 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Prueba } from './Components/prueba.jsx'
+import { Header } from './components/header.jsx'
 
 export function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <Header/>
       <div className="Container">
         <div className="row">
           <div className="col">
