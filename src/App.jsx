@@ -2,7 +2,6 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Prueba } from './Components/prueba.jsx'
 import { Header } from './components/header.jsx'
 
 export function App() {
@@ -33,7 +32,6 @@ export function App() {
           </div>
         </div>
       </div>
-      <Prueba />
     </>
   )
 }
