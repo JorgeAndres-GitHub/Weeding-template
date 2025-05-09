@@ -1,3 +1,5 @@
+import { ScheduleButton } from "./scheduleButton"
+
 export function WeddingDate() {
     return(
         <>
@@ -18,6 +20,10 @@ export function WeddingDate() {
                     </div>
                 </div>
             </div>
+            <div className="row align-items-center justify-content-center">
+                <ScheduleButton />
+            </div>
+            
 
             {/* Google Fonts */}
             <link
