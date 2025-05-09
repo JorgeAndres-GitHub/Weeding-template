@@ -1,19 +1,54 @@
 import headerGif from '../assets/header.gif';
 import { MusicActivation } from './musicActivation';
+import { WeddingDate } from './weddingDate';
 
 export function Header() {
-    return(
-        <>
-            <div className="w-100">
-                <div className="row">
-                    <img src={headerGif} alt="Decoracion de Boda" className="img-fluid mb-4" style={{width:'100%', marginTop:'0', display:'block'}}></img>
-                    <h5 className="text-muted" style={{color:'#7aa190'}}>Nos Casamos</h5>
-                    <h1 className="display-4" style={{fontFamily: "'Dancing Script', cursive", color:'#7aa190'}}>Andrés</h1>
-                    <h2 className="text-muted" style={{color:'#7aa190'}}>&</h2>
-                    <h1 className="display-4" style={{fontFamily: "'Dancing Script', cursive", color:'#7aa190'}}>Susana</h1>
-                </div>
-            </div>
-            <MusicActivation />
-        </>
-    )
+  return (
+    <>
+      <div className="header-section">
+        <div className="row text-center">
+          <img
+            src={headerGif}
+            alt="Decoracion de Boda"
+            className="img-fluid mb-4"
+            style={{ width: '100%', marginTop: '0', display: 'block' }}
+          />
+          <h5 className="text-muted subtitle mb-3">Nos Casamos</h5>
+          <h1 className="display-4 names">Andrés</h1>
+          <h2 className="text-muted ampersand">&</h2>
+          <h1 className="display-4 names">Susana</h1>
+        </div>
+      </div>
+
+      <WeddingDate />
+      <MusicActivation />
+
+      {/* Google Fonts */}
+      <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+        rel="stylesheet"
+      />
+
+      <style>{`
+        .names {
+          font-family: 'Great Vibes', cursive;
+          color: #7aa190;
+          font-size: 4rem;
+        }
+
+        .subtitle {
+          color: #7aa190;
+          font-family: 'Libre Baskerville', serif;
+          font-style: italic;
+          letter-spacing: 1px;
+        }
+
+        .ampersand {
+          color: #7aa190;
+          font-family: 'Libre Baskerville', serif;
+          font-style: italic;
+        }
+      `}</style>
+    </>
+  );
 }
