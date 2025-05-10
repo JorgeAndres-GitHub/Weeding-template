@@ -3,6 +3,15 @@ import { MusicActivation } from './musicActivation';
 import { WeddingDate } from './weddingDate';
 
 export function Header() {
+
+  const splitText = (text) =>
+  text.split('').map((char, i) => (
+    <span key={i} style={{ animationDelay: `${i * 0.1}s` }} className="fade-in-letter">
+      {char}
+    </span>
+  ));
+
+
   return (
     <>
       <div className="header-section">
@@ -14,9 +23,9 @@ export function Header() {
             style={{ width: '100%', marginTop: '0', display: 'block' }}
           />
           <h5 className="text-muted subtitle mb-3">Nos Casamos</h5>
-          <h1 className="display-4 names">Andrés</h1>
+          <h1 className="display-4 names">{splitText('Andrés')}</h1>
           <h2 className="text-muted ampersand">&</h2>
-          <h1 className="display-4 names">Susana</h1>
+          <h1 className="display-4 names">{splitText('Susana')}</h1>
         </div>
       </div>
 
@@ -47,6 +56,23 @@ export function Header() {
           color: #7aa190;
           font-family: 'Libre Baskerville', serif;
           font-style: italic;
+        }
+
+        .fade-in-letter {
+          display: inline-block;
+          opacity: 0;
+          animation: fadeInUp 0.5s forwards;
+        }
+
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
       `}</style>
     </>

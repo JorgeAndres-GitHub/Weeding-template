@@ -1,16 +1,18 @@
-import { useState } from 'react'
-import './App.css'
+//import './App.css'
 import { Header } from './components/header.jsx'
+import { EsquinaFLor } from './components/esquinaFlor.jsx'
+import { Descripcion } from './components/descripcion.jsx'
+import { Layout } from './layout/layout.jsx'
 
 export function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className="w-100">
-        <Header/>      
-      </div>
-      
+      <Layout> {/* Envuelve el contenido con Layout */}
+        <EsquinaFLor></EsquinaFLor>
+        <Header />
+        <Descripcion></Descripcion>
+      </Layout>
     </>
   )
 }
