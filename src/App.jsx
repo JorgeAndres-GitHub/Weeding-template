@@ -2,6 +2,7 @@
 import { Header } from './components/header.jsx'
 import { EsquinaFLor } from './components/esquinaFlor.jsx'
 import { Descripcion } from './components/descripcion.jsx'
+import { Ubicacion } from './components/ubicacion.jsx'
 import { Layout } from './layout/layout.jsx'
 
 export function App() {
@@ -12,6 +13,7 @@ export function App() {
         <EsquinaFLor></EsquinaFLor>
         <Header />
         <Descripcion></Descripcion>
+        <Ubicacion></Ubicacion>
       </Layout>
     </>
   )

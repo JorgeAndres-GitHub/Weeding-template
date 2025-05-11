@@ -35,7 +35,7 @@ export function MusicActivation() {
         <>
             <div className="row mt-5">
                 <div className="col-6 offset-3">
-                    <p className="text-muted">
+                    <p className="text-muted text-center">
                         Presiona el <i className="bi bi-balloon-heart-fill"></i> para escuchar nuestra canción
                     </p>
                     <span className="line"></span>
@@ -43,18 +43,19 @@ export function MusicActivation() {
             </div>
 
             <div className="row">
-                <div className="d-flex justify-content-center align-items-center gap-4 mt-3">
-                    <div className="col-1" onClick={restartMusic} style={{ cursor: 'pointer' }}>
+                <div className="d-flex justify-content-between align-items-center gap-4 mt-3 w-100 px-5">
+                    <div className="d-flex justify-content-center align-items-center" onClick={restartMusic} style={{ cursor: 'pointer', marginLeft: 'auto' }}>
                         <i className={`bi bi-skip-start-fill control-icon ${activeIcon === 'restart' ? 'icon-clicked' : ''}`}></i>
                     </div>
-                    <div className="col-1 icon-circle m-4" onClick={playMusic} style={{ cursor: 'pointer' }}>
+                    <div className="d-flex justify-content-center align-items-center icon-circle" onClick={playMusic} style={{ cursor: 'pointer' }}>
                         <i className={`bi bi-balloon-heart control-icon ${activeIcon === 'play' ? 'icon-clicked' : ''}`}></i>
                     </div>
-                    <div className="col-1" onClick={stopMusic} style={{ cursor: 'pointer' }}>
+                    <div className="d-flex justify-content-center align-items-center" onClick={stopMusic} style={{ cursor: 'pointer', marginRight: 'auto' }}>
                         <i className={`bi bi-skip-end-fill control-icon ${activeIcon === 'stop' ? 'icon-clicked' : ''}`}></i>
                     </div>
                 </div>
             </div>
+
 
             <audio ref={audioRef} src="/weddingMusic.mp3"></audio>
 
@@ -64,7 +65,7 @@ export function MusicActivation() {
                     width: 100%;
                     height: 1px;
                     background-color: #7aa190;
-                    margin: 0 10px;
+                    margin: 0 0px;
                     vertical-align: middle;
                 }
 

@@ -2,7 +2,7 @@ export function Descripcion() {
     return (
         <>
             <div className="row mt-5 text-center">
-                <p className="wedding-text">Por la voluntad de Dios nos conocimos, por su gracia nos enamoramos, bajo su luz hemos ido descubriendo nuestro camino, y en su presencia, queremos consagrar nuestro hogar.</p>
+                <p className="wedding-text px-5">Por la voluntad de Dios nos conocimos, por su gracia nos enamoramos, bajo su luz hemos ido descubriendo nuestro camino, y en su presencia, queremos consagrar nuestro hogar.</p>
             </div>
 
             <link
