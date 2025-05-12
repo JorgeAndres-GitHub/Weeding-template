@@ -30,7 +30,7 @@ export function MusicActivation() {
               fontSize: "0.8rem",
               cursor: "pointer",
             }}
-            onClick={() => toast.remove(t.id)}
+            onClick={() => toast.dismiss(t.id)}
           >
             Cerrar
           </button>
@@ -50,7 +50,6 @@ export function MusicActivation() {
           secondary: "#FFFAEE",
         },
         duration: 3000, // Se cerrará automáticamente después de 3 segundos
-        closeOnClick: true, // Puedes omitirlo o dejarlo en true
       }
     );
   };
