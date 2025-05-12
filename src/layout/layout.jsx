@@ -8,6 +8,7 @@ export function Layout({ children }) {
         .animated-background {
           position: relative;
           min-height: 100vh;
+          width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
           overflow: hidden;
           background-color: #fffaf5;
         }
@@ -18,8 +19,8 @@ export function Layout({ children }) {
           position: absolute;
           top: 0;
           left: 0;
-          width: 200%;
-          height: 200%;
+          width: 100%; /* Cambia de 200% a 100% para que no desborde */
+          height: 100%; /* Asegura que ocupe todo el alto del contenedor */
           background-image:
             radial-gradient(circle, #ffa07a 1px, transparent 1px),
             radial-gradient(circle, #98fb98 1px, transparent 1px);

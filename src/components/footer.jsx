@@ -28,6 +28,7 @@ export function Footer() {
           </div>
         </div>
       </div>
+      <p className="text-center wedding-suit m-5">Te esperamos!</p>
 
       <style>{`
         .rotating-image-container {

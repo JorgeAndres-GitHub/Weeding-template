@@ -14,7 +14,7 @@ export function Ubicacion() {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="containe mt-5">
       <PiChurchThin
         size={70}
         className="d-flex justify-content-between align-items-center gap-4 mt-3 w-100 px-5"
