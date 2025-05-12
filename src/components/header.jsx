@@ -21,8 +21,14 @@ export function Header() {
           <img
             src={headerGif}
             alt="Decoracion de Boda"
-            className="img-fluid mb-4"
-            style={{ width: "100%", marginTop: "0", display: "block" }}
+            className="img-fluid mb-4 header-gif"
+            style={{
+              width: "100%",
+              maxHeight: "220px",
+              objectFit: "contain",
+              marginTop: "0",
+              display: "block",
+            }}
           />
           <h4 className="text-center subtitle mx-auto mb-3"></h4>
           <h5 className="text-black text-center subtitle mb-5">
@@ -84,6 +90,14 @@ export function Header() {
             opacity: 1;
             transform: translateY(0);
           }
+        }
+
+        .header-gif {
+          width: 100%;
+          max-height: 220px;
+          object-fit: contain;
+          display: block;
+          margin-top: 0;
         }
       `}</style>
     </>

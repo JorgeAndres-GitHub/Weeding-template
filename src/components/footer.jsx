@@ -8,14 +8,14 @@ export function Footer() {
         {/* Columna izquierda */}
         <div className="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center mb-4">
           <img src={final} alt="Vestuario" className="mb-3 img-fluid" />
-          <p className="text-center wedding-text px-3">
+          <p className="text-center wedding-text invitation-container">
             Tu compañia es nuestro mejor regalo, no olvidas confirmar tu
             asistencia al <p className="wedding-suit">3006722701</p>
           </p>
         </div>
 
         {/* Columna derecha */}
-        <div className="col-12 col-md-6 d-flex justify-content-center">
+        <div className="col-12 col-md-6 d-flex justify-content-center mt-5">
           <div className="rotating-image-container">
             <img src={hexagono} alt="Vestuario" className="rotating-image" />
             <p className="text-center wedding-text px-3">
@@ -31,6 +31,10 @@ export function Footer() {
       <p className="text-center wedding-suit m-5">Te esperamos!</p>
 
       <style>{`
+        .invitation-container {
+          padding: 0 20%; /* Deja un 10% de espacio a los lados */
+        }
+
         .rotating-image-container {
           position: relative;
           display: flex;
