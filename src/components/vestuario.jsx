@@ -27,7 +27,7 @@ export function Vestuario() {
               <img
                 src={couple}
                 alt="Vestuario"
-                className="img-fluid"
+                className="img-fluid mb-2"
                 style={{ maxWidth: "120px" }}
               />
             </div>

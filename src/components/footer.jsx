@@ -4,7 +4,7 @@ import final from "../assets/final.png";
 export function Footer() {
   return (
     <>
-      <div className="row">
+      <div className="row mt-5">
         {/* Columna izquierda */}
         <div className="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center mb-4">
           <img src={final} alt="Vestuario" className="mb-3 img-fluid" />

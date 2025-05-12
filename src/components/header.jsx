@@ -30,13 +30,12 @@ export function Header() {
               display: "block",
             }}
           />
-          <h4 className="text-center subtitle mx-auto mb-3"></h4>
-          <h5 className="text-black text-center subtitle mb-5">
-            <p className="text-center">Con la bendición de Dios</p>
-            <p className="text-center">y de nuestros padres</p>
-            <p className="text-center">queremos compartir contigo</p>
-            <p className="text-center">la alegría de</p>
-            <p className="text-center">Nuestra Boda</p>
+          <h5 className="text-black text-center subtitle mt-3 mb-5">
+            <p className="text-center fs-5">Con la bendición de Dios</p>
+            <p className="text-center fs-5">y de nuestros padres</p>
+            <p className="text-center fs-5">queremos compartir contigo</p>
+            <p className="text-center fs-5">la alegría de</p>
+            <p className="text-center fs-3">Nuestra Boda</p>
           </h5>
           <h1 className="display-4 names">{splitText("Andrés")}</h1>
           <h2 className="text-muted ampersand">&</h2>
