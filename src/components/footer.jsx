@@ -5,17 +5,20 @@ export function Footer() {
   return (
     <>
       <div className="row">
-        <div className="col-6 d-flex flex-column align-items-center justify-content-center">
-          <img src={final} alt="Vestuario" className="mb-3" />
-          <p className="text-center wedding-text px-5">
+        {/* Columna izquierda */}
+        <div className="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center mb-4">
+          <img src={final} alt="Vestuario" className="mb-3 img-fluid" />
+          <p className="text-center wedding-text px-3">
             Tu compañia es nuestro mejor regalo, no olvidas confirmar tu
-            asistencia al 3006722701
+            asistencia al <p className="wedding-suit">3006722701</p>
           </p>
         </div>
-        <div className="col-6">
+
+        {/* Columna derecha */}
+        <div className="col-12 col-md-6 d-flex justify-content-center">
           <div className="rotating-image-container">
             <img src={hexagono} alt="Vestuario" className="rotating-image" />
-            <p className="text-center wedding-text px-5">
+            <p className="text-center wedding-text px-3">
               Una Boda <br />
               se vive tres veces <br />
               Al soñarla <br />
@@ -32,8 +35,8 @@ export function Footer() {
           display: flex;
           justify-content: center;
           align-items: center;
-          height: 350px; /* Aumenta el tamaño del contenedor */
-          width: 350px; /* Aumenta el tamaño del contenedor */
+          height: 300px; /* Ajusta el tamaño del contenedor */
+          width: 300px; /* Ajusta el tamaño del contenedor */
         }
 
         .rotating-image {
