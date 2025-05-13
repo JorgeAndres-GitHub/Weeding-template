@@ -20,7 +20,7 @@ export function Vestuario() {
           <div className="card-body row d-flex justify-content-center align-items-center text-center vestuario-row">
             <div className="col-12 col-md-4 mb-2">
               <p className="text-muted fw-bold letter no-break">
-                Hombres: Guayabera o camisa.
+                Hombres: Guayabera.
               </p>
             </div>
             <div className="col-12 col-md-4 mb-2">
@@ -35,6 +35,9 @@ export function Vestuario() {
               <p className="text-muted fw-bold letter no-break">
                 Mujeres: Vestido colores pastel.
               </p>
+            </div>
+            <div className="col-12">
+              <p className="wedding-text">~ Se reserva el color blanco ~</p>
             </div>
           </div>
         </div>
