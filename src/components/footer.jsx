@@ -9,7 +9,7 @@ export function Footer() {
         <div className="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center mb-4">
           <img src={final} alt="Vestuario" className="mb-3 img-fluid" />
           <p className="text-center wedding-text invitation-container">
-            Tu compañia es nuestro mejor regalo, no olvidas confirmar tu
+            Tu compañia es nuestro mejor regalo, no olvides confirmar tu
             asistencia al <p className="wedding-suit">3006722701</p>
           </p>
         </div>
