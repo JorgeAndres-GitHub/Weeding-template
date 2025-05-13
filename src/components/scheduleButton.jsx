@@ -3,7 +3,7 @@ import { useState } from "react";
 export function ScheduleButton() {
   const [isClicked, setIsClicked] = useState(false);
   const googleCalendarUrl =
-    "https://www.google.com/calendar/render?action=TEMPLATE&text=Nos+Casamos+%F0%9F%92%8D&dates=20250614T160000Z/20250614T180000Z&details=¡Acompáñanos+en+este+día+tan+especial!";
+    "https://www.google.com/calendar/render?action=TEMPLATE&text=Nos+Casamos+%F0%9F%92%8D&dates=20250614T210000Z/20250614T230000Z&details=¡Acompáñanos+en+este+día+tan+especial!&ctz=America/Bogota";
 
   const handleClick = (e) => {
     e.preventDefault(); // Evita la redirección inmediata
