@@ -31,6 +31,12 @@ export function Footer() {
       <p className="text-center wedding-suit m-5">Te esperamos!</p>
 
       <style>{`
+        .wedding-suit {
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.8rem;
+            color: #DAA520;
+            line-height: 1.6;
+        }
         .invitation-container {
           padding: 0 20%; /* Deja un 10% de espacio a los lados */
         }

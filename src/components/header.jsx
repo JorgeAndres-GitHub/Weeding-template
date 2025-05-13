@@ -30,12 +30,15 @@ export function Header() {
               display: "block",
             }}
           />
-          <h5 className="text-black text-center subtitle mt-3 mb-5">
+          <h5
+            className="text-black text-center subtitle mt-3 mb-5 lh-1"
+            style={{ letterSpacing: "0px" }}
+          >
             <p className="text-center fs-5">Con la bendición de Dios</p>
             <p className="text-center fs-5">y de nuestros padres</p>
             <p className="text-center fs-5">queremos compartir contigo</p>
             <p className="text-center fs-5">la alegría de</p>
-            <p className="text-center fs-3">Nuestra Boda</p>
+            <p className="text-center fs-1">Nuestra Boda</p>
           </h5>
           <h1 className="display-4 names">{splitText("Andrés")}</h1>
           <h2 className="text-muted ampersand">&</h2>
@@ -77,7 +80,7 @@ export function Header() {
         .fade-in-letter {
           display: inline-block;
           opacity: 0;
-          animation: fadeInUp 0.5s forwards;
+          animation: fadeInUp 3s forwards;
         }
 
         @keyframes fadeInUp {

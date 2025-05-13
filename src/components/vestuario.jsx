@@ -1,4 +1,4 @@
-import couple from "../assets/couple.png";
+import couple2 from "../assets/couple2.png";
 
 export function Vestuario() {
   return (
@@ -13,7 +13,7 @@ export function Vestuario() {
           }}
         >
           <div className="card-header border-0">
-            <p className="wedding-suit px-4 text-center text-uppercase">
+            <p className="wedding-title px-4 text-center">
               Protocolo de Vestuario
             </p>
           </div>
@@ -25,7 +25,7 @@ export function Vestuario() {
             </div>
             <div className="col-12 col-md-4 mb-2">
               <img
-                src={couple}
+                src={couple2}
                 alt="Vestuario"
                 className="img-fluid mb-2"
                 style={{ maxWidth: "120px" }}
@@ -46,13 +46,12 @@ export function Vestuario() {
       />
 
       <style>{`
-        .wedding-suit {
-          font-family: 'Great Vibes', cursive;
-          font-size: 1.8rem;
-          color: #DAA520;
-          line-height: 1.6;
-          letter-spacing: 10px;
-        }
+        .wedding-title {
+              font-family: 'Great Vibes', cursive;
+              font-size: 2.2rem;
+              color: #DAA520;
+              line-height: 1.6;
+    }
         .custom-card {
           background-color: #FFF8E7 !important;
           border-radius: 20px;

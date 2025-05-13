@@ -21,7 +21,7 @@ export function Ubicacion() {
       />
       <h2 className="mb-3 wedding-text text-center">Ceremonia Religiosa</h2>
       <p className="text-center letter">Hora: 4:00 p.m.</p>
-      <p className="text-center letter">San Juan Pablo II - Las Ramas</p>
+      <p className="text-center letter">San Juan Pablo II - Las Ramblas</p>
       <div className="d-flex align-items-center justify-content-center">
         <a
           href="https://www.google.com/maps/search/?api=1&query=San+Juan+Pablo+II+Las+Ramblas+-+Zona+Norte"
